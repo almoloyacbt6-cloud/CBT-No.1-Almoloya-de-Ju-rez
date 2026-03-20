@@ -113,7 +113,6 @@
         function manejarRespuestaGoogle(response) {
             const datosUsuario = decodificarJwt(response.credential);
             
-            // --- NUEVO: Guardamos el nombre y la FOTO en la memoria del navegador ---
             localStorage.setItem('user_name', datosUsuario.name);
             localStorage.setItem('user_photo', datosUsuario.picture);
             
@@ -125,6 +124,7 @@
                 timer: 2000,
                 showConfirmButton: false
             }).then(() => {
+                // CORRECCIÓN 2: Redirección al index.html
                 window.location.href = "index.html";
             });
         }
