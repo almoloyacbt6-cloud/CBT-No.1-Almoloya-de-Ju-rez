@@ -1539,3 +1539,62 @@ body {
     align-items: center;
     display: flex;
 }
+
+
+
+/* --- DISEÑO PARA CELULARES --- */
+@media (max-width: 768px) {
+    
+    /* 1. Menú de Navegación vertical */
+    .nav-links {
+        display: none; /* Escondemos el menú horizontal */
+        flex-direction: column;
+        position: absolute;
+        top: 70px;
+        left: 0;
+        width: 100%;
+        background-color: #064e3b;
+        padding: 20px 0;
+        text-align: center;
+        z-index: 1000;
+    }
+
+    /* Clase para mostrar el menú cuando tocas el botón (necesitarás JS) */
+    .nav-links.active {
+        display: flex;
+    }
+
+    .nav-links li {
+        margin: 15px 0;
+    }
+
+    /* 2. Ajuste de imágenes y textos del Header */
+    .header-content h1 {
+        font-size: 2rem;
+    }
+
+    .header-content p {
+        font-size: 1rem;
+        padding: 0 10px;
+    }
+
+    /* 3. Las cuadrículas (Grid) se vuelven de una sola columna */
+    .modelo-grid, .trayecto-educativo .timeline, .footer-content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+        padding: 10px;
+    }
+
+    .modelo-item, .footer-col {
+        width: 90%;
+        margin-bottom: 20px;
+    }
+
+    /* 4. Ajuste de la foto de perfil en el menú */
+    .user-profile-container {
+        justify-content: center;
+        margin-top: 10px;
+    }
+}
