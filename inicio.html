@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CBT No. 1 Almoloya de Juárez | Técnico en Informática</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+</head>
+
+<body>
+    <div id="preloader">
+        <div class="loader"></div>
+        <p class="loader-text">Cargando Sistema...</p>
+    </div>
+
+    <nav class="navbar">
+        <div class="logo-container">
+            <img src="Logo de la escuela.jpeg" alt="Escudo CBT No. 1" class="nav-logo-img">
+            <div class="logo-text-group">
+                <span class="logo-cbt">CBT No. 1</span>
+                <span class="logo-sub">ALMOLOYA DE JUÁREZ</span>
+            </div>
+        </div>
+        
+        <ul class="nav-links" id="navLinks">
+            <li><a href="inicio.html">Inicio</a></li>
+            <li><a href="ofertaeducativa.html">Oferta Educativa</a></li>
+            <li><a href="carreratecnica.html">Carrera Técnica</a></li>
+            <li><a href="admisiones.html">Admisiones</a></li>
+            <li><a href="contactos.html">Contactos</a></li>
+            
+            <li id="login-item">
+                <a href="login.html" class="btn-login-menu">Iniciar Sesión <i class="fas fa-user-circle"></i></a>
+            </li>
+            
+            <li id="user-profile" class="user-profile-container" style="display: none;">
+    <div class="profile-image-wrapper">
+        <img id="display-photo" src="" alt="User">
+    </div>
+    <span id="display-name" class="profile-user-name"></span>
+    <a href="#" onclick="cerrarSesion()" class="logout-btn"><i class="fas fa-sign-out-alt"></i></a>
+</li>
+        </ul>
+
+        <div class="menu-toggle" id="mobile-menu">
+            <span></span><span></span><span></span>
+        </div>
+    </nav>
+
+    <section id="inicio" class="hero">
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <h1 class="reveal">Liderazgo que Transforma la <br><span class="text-gradient">Tecnología</span></h1>
+            <p class="reveal-delay hero-text">
+                En el CBT No. 1 Almoloya de Juárez, no solo obtienes un certificado, obtienes las llaves del mundo digital. 
+                <strong>Bachillerato Bivalente con Carrera Técnica en Informática.</strong>
+            </p>
+            
+            <div class="hero-btns">
+                <a href="admisiones.html" class="btn-shine">¡Únete a los Informáticos!</a>
+                <a href="carreratecnica.html" class="btn-glass">Explorar Carrera</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="stats-bar">
+        <div class="stat-item">
+            <span class="stat-number">100%</span>
+            <span class="stat-desc">Bachillerato Bivalente</span>
+        </div>
+        <div class="stat-item">
+            <span class="stat-number">+15</span>
+            <span class="stat-desc">Años de Excelencia</span>
+        </div>
+        <div class="stat-item">
+            <span class="stat-number">5</span>
+            <span class="stat-desc">Módulos Profesionales</span>
+        </div>
+    </section>
+
+    <section id="detalles" class="features">
+        <div class="container">
+            <h2 class="section-title">¿Por qué somos tu mejor opción?</h2>
+            <div class="features-grid">
+                <div class="feature-box">
+                    <i class="fas fa-certificate"></i>
+                    <h3>Doble Certificación</h3>
+                    <p>Al concluir, recibes Certificado de Bachillerato y Título Profesional como Técnico en Informática.</p>
+                </div>
+                <div class="feature-box">
+                    <i class="fas fa-user-tie"></i>
+                    <h3>Estadías Profesionales</h3>
+                    <p>Vinculación con empresas para que ganes experiencia real antes de graduarte.</p>
+                </div>
+                <div class="feature-box">
+                    <i class="fas fa-hand-holding-heart"></i>
+                    <h3>Apoyo Integral</h3>
+                    <p>Acceso a becas, seguro estudiantil (IMSS) y programas de tutoría personalizada.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="curriculum">
+        <div class="curriculum-text">
+            <h2>Domina la Informática de la A a la Z</h2>
+            <p>Nuestro plan de estudios está diseñado para convertirte en un experto capaz de enfrentar cualquier resto tecnológico.</p>
+            <ul class="check-list">
+                <li><i class="fas fa-check-circle"></i> Ensamble y Mantenimiento de Hardware</li>
+                <li><i class="fas fa-check-circle"></i> Administración de Redes LAN</li>
+                <li><i class="fas fa-check-circle"></i> Programación en Html, CSS y javascript</li>
+                <li><i class="fas fa-check-circle"></i> Diseño de Bases de Datos SQL</li>
+                <li><i class="fas fa-check-circle"></i> Desarrollo de Aplicaciones Web Modernas</li>
+            </ul>
+        </div>
+        <div class="curriculum-image">
+            <img src="Code Python.jpg" alt="Tecnología Avanzada">
+        </div>
+    </section>
+
+    <section class="cta-banner">
+        <div class="cta-card">
+            <h2>¿Estás listo para dar el primer paso?</h2>
+            <p>No dejes tu futuro al azar. Asegura tu lugar en la nueva generación de técnicos profesionales.</p>
+            <a href="admisiones.html" class="btn-yellow">Ver Requisitos de Admisión</a>
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+    <script src="login-goog.js"></script>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-col">
+                <h3>CBT No.1 Almoloya de Juárez</h3>
+                <p>Excelencia educativa en Almoloya de Juárez.</p>
+            </div>
+            <div class="footer-col">
+                <h3>Contacto</h3>
+                <ul>
+                    <li><i class="fas fa-phone"></i> 7291098966</li>
+                    <li><i class="fas fa-envelope"></i> cbtmextepec07@gmail.com</li>
+                </ul>
+            </div>
+        </div>
+        <p class="copyright">&copy; 2026 CBT No. 1 Almoloya de Juárez</p>
+    </footer>
+</body>
+</html>

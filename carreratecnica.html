@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Técnico en Informática | CBT No. 1 Almoloya de Juárez</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+
+   <div id="preloader">
+    <div class="loader"></div>
+    <p class="loader-text">Cargando Sistema...</p>
+</div>
+
+    <nav class="navbar">
+        <div class="logo-container">
+            <img src="Logo de la escuela.jpeg" alt="Logo CBT" class="nav-logo-img">
+            <div class="logo-text-group">
+                <span class="logo-cbt">CBT No. 1</span>
+                <span class="logo-sub">ALMOLOYA DE JUÁREZ</span>
+            </div>
+        </div>
+        <ul class="nav-links">
+            <li><a href="inicio.html">Inicio</a></li>
+            <li><a href="ofertaeducativa.html">Oferta Educativa</a></li>
+            <li><a href="carreratecnica.html">Carrera Técnica</a></li>
+            <li><a href="admisiones.html">Admisiones</a></li>
+            <li><a href="contactos.html">Contactos</a></li>
+            
+            <li id="login-item">
+                <a href="login.html" class="btn-login-menu">Iniciar Sesión <i class="fas fa-user-circle"></i></a>
+            </li>
+
+            <li id="user-profile" class="user-profile-container" style="display: none;">
+                <div class="profile-image-wrapper">
+                    <img id="display-photo" src="" alt="User">
+                </div>
+                <span id="display-name" class="profile-user-name"></span>
+                <a href="#" onclick="cerrarSesion()" class="logout-btn"><i class="fas fa-sign-out-alt"></i></a>
+            </li>
+        </ul>
+    </nav>
+
+    <header class="header-carrera-tech">
+        <div class="tech-bg-overlay"></div>
+        <div class="header-content-tech">
+            <div class="badge-tech">Bachillerato Tecnológico</div>
+            <h1>Técnico en <br><span class="highlight">Informática</span></h1>
+            <p class="typing-text">>_ Formando líderes en la era digital.</p>
+        </div>
+    </header>
+
+    <section class="explicacion-moderna">
+    <div class="bento-container">
+        <div class="bento-item main-card">
+            <h2>El Perfil del <br><span class="text-neon">Especialista</span></h2>
+            <p>El egresado del CBT No. 1 domina el ecosistema digital mediante tres pilares fundamentales.</p>
+        </div>
+
+        <div class="bento-item tech-card">
+            <div class="card-icon"><i class="fas fa-code-branch"></i></div>
+            <h3>Software</h3>
+            <p>Desarrollo de aplicaciones web y móviles de alto impacto.</p>
+        </div>
+
+        <div class="bento-item image-card">
+            <img src="imagen-3.jpg" alt="Coding">
+            <div class="overlay-glass">
+                <span>CBT EN ACCIÓN</span>
+            </div>
+        </div>
+
+        <div class="bento-item tech-card highlight">
+            <div class="card-icon"><i class="fas fa-network-wired"></i></div>
+            <h3>Redes</h3>
+            <p>Gestión de infraestructura y ciberseguridad corporativa.</p>
+        </div>
+
+        <div class="bento-item tech-card">
+            <div class="card-icon"><i class="fas fa-microchip"></i></div>
+            <h3>Hardware</h3>
+            <p>Mantenimiento preventivo y arquitectura de sistemas.</p>
+        </div>
+    </div>
+</section>
+
+    <section class="trayecto-informatica">
+    <h2 class="section-title">Ruta de <span class="text-yellow">Certificación</span></h2>
+    <p class="subtitle-trayecto">Tu evolución técnica paso a paso</p>
+    
+    <div class="grid-trayecto">
+        <div class="fase-card">
+            <div class="fase-header">
+                <span class="fase-tag">Fase 01</span>
+                <i class="fas fa-microchip"></i>
+            </div>
+            <h3>Arquitectura Base</h3>
+            <ul class="fase-list">
+                <li>Mantenimiento de Hardware</li>
+                <li>Sistemas Operativos</li>
+                <li>Lógica de Programación</li>
+            </ul>
+            <div class="fase-footer">Primer Año</div>
+        </div>
+
+        <div class="fase-card active">
+            <div class="fase-header">
+                <span class="fase-tag">Fase 02</span>
+                <i class="fas fa-code"></i>
+            </div>
+            <h3>Desarrollo Core</h3>
+            <ul class="fase-list">
+                <li>Programación Orientada a Objetos</li>
+                <li>Gestión de Bases de Datos</li>
+                <li>Redes de Computadoras</li>
+            </ul>
+            <div class="fase-footer">Segundo Año</div>
+        </div>
+
+        <div class="fase-card">
+            <div class="fase-header">
+                <span class="fase-tag">Fase 03</span>
+                <i class="fas fa-cloud-code"></i>
+            </div>
+            <h3>Full Stack & Estadías</h3>
+            <ul class="fase-list">
+                <li>Desarrollo Web Dinámico</li>
+                <li>Ciberseguridad Básica</li>
+                <li>Escenarios Reales (Estadías)</li>
+            </ul>
+            <div class="fase-footer">Tercer Año</div>
+        </div>
+    </div>
+</section>
+
+    <section class="perfil-egreso">
+        <div class="perfil-card">
+            <h2>Competencias del <span class="text-yellow">Egresado</span></h2>
+            <p>Al concluir sus estudios, el alumno será capaz de:</p>
+            <div class="perfil-list">
+                <div class="perfil-item"><i class="fas fa-code"></i> Programar en lenguajes de alto nivel.</div>
+                <div class="perfil-item"><i class="fas fa-database"></i> Gestionar sistemas de información masivos.</div>
+                <div class="perfil-item"><i class="fas fa-shield-alt"></i> Implementar protocolos de ciberseguridad.</div>
+                <div class="perfil-item"><i class="fas fa-project-diagram"></i> Administrar proyectos tecnológicos.</div>
+                <div class="perfil-item"><i class="fas fa-users"></i> Trabajar en equipos multidisciplinarios.</div>
+                <div class="perfil-item"><i class="fas fa-lightbulb"></i> Emprender soluciones digitales innovadoras.</div>
+            </div>
+        </div>
+    </section>
+
+    <section class="carrera-dashboard">
+        <div class="dashboard-header">
+            <h2 class="titulo-dash">Estructura Curricular</h2>
+            <p>Cada módulo profesional certifica una competencia específica para el campo laboral.</p>
+        </div>
+
+        <div class="grid-dashboard">
+            <div class="dash-card">
+                <div class="card-number">M1</div>
+                <div class="card-icon"><i class="fas fa-laptop-medical"></i></div>
+                <h3>Soporte Técnico</h3>
+                <p>Ensamblado de equipos y mantenimiento preventivo.</p>
+                <div class="software-tags"><span>Hardware</span> <span>Software</span></div>
+            </div>
+
+            <div class="dash-card">
+                <div class="card-number">M2</div>
+                <div class="card-icon"><i class="fas fa-code"></i></div>
+                <h3>Programación</h3>
+                <p>Construcción de software con algoritmos eficientes.</p>
+                <div class="software-tags"><span>Java</span> <span>Python</span></div>
+            </div>
+
+            <div class="dash-card">
+                <div class="card-number">M3</div>
+                <div class="card-icon"><i class="fas fa-database"></i></div>
+                <h3>Información</h3>
+                <p>Administración de datos y servidores web.</p>
+                <div class="software-tags"><span>MySQL</span> <span>PHP</span></div>
+            </div>
+
+            <div class="dash-card featured-card">
+                <div class="card-number">M4</div>
+                <div class="card-icon"><i class="fas fa-rocket"></i></div>
+                <h3>Estadías</h3>
+                <p>Proyecto final en entorno laboral real (Escenario real).</p>
+                <div class="software-tags"><span>Prácticas</span> <span>Título</span></div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-col">
+                <h3>CBT No.1 Almoloya de Juárez</h3>
+                <p>Excelencia educativa en Almoloya de Juárez.</p>
+            </div>
+            <div class="footer-col">
+                <h3>Contacto</h3>
+                <ul>
+                    <li><i class="fas fa-phone"></i> 7291098966</li>
+                    <li><i class="fas fa-envelope"></i> cbtmextepec07@gmail.com</li>
+                </ul>
+            </div>
+        </div>
+        <p class="copyright">&copy; 2026 CBT No. 1 Almoloya de Juárez</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>

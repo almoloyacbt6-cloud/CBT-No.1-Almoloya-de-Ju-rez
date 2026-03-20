@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto | CBT No. 1 Almoloya de Juárez</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+</head>
+<body>
+    <div id="preloader">
+        <div class="loader"></div>
+        <p class="loader-text">Cargando Sistema...</p>
+    </div>
+
+    <nav class="navbar">
+        <div class="logo-container">
+            <img src="Logo de la escuela.jpeg" alt="Escudo CBT No. 1" class="nav-logo-img">
+            <div class="logo-text-group">
+                <span class="logo-cbt">CBT No. 1</span>
+                <span class="logo-sub">ALMOLOYA DE JUÁREZ</span>
+            </div>
+        </div>
+       <ul class="nav-links">
+            <li><a href="inicio.html">Inicio</a></li>
+            <li><a href="ofertaeducativa.html">Oferta Educativa</a></li>
+            <li><a href="carreratecnica.html">Carrera Técnica</a></li>
+            <li><a href="admisiones.html">Admisiones</a></li>
+            <li><a href="contactos.html">Contactos</a></li>
+            
+            <li id="login-item">
+                <a href="login.html" class="btn-login-menu">Iniciar Sesión <i class="fas fa-user-circle"></i></a>
+            </li>
+
+            <li id="user-profile" class="user-profile-container" style="display: none;">
+                <div class="profile-image-wrapper">
+                    <img id="display-photo" src="" alt="User">
+                </div>
+                <span id="display-name" class="profile-user-name"></span>
+                <a href="#" onclick="cerrarSesion()" class="logout-btn"><i class="fas fa-sign-out-alt"></i></a>
+            </li>
+        </ul>
+    </nav>
+
+    <section class="header-contactos">
+        <div class="header-overlay"></div>
+        <div class="header-content">
+            <h1>Estamos para <span class="text-yellow">Escucharte</span></h1>
+            <p>Comunícate con las oficinas administrativas del plantel</p>
+        </div>
+    </section>
+
+    <section class="contacto-main">
+        <div class="contacto-grid">
+            <div class="info-card">
+                <h3>Información de Contacto</h3>
+                <div class="info-item">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <p>19.459458, -99.890191 Mextepec, 50910 Méx.</p>
+<p>https://maps.app.goo.gl/KdZKvtwdJc8x5Kgn9</p>
+                </div>
+                <div class="info-item">
+                    <i class="fas fa-phone"></i>
+                    <p>7291098966</p>
+                </div>
+                <div class="info-item">
+                    <i class="fas fa-envelope"></i>
+                    <p>cbtmextepec07@gmail.com</p>
+                </div>
+                <div class="info-item">
+                    <i class="fas fa-clock"></i>
+                    <p>Lunes a Viernes: 7:00 AM - 2:50 PM</p>
+                </div>
+            </div>
+
+            <div class="form-card">
+                <h3>Envíanos un mensaje</h3>
+                <form id="contactForm" action="https://formsubmit.co/cbtmextepec07@gmail.com" method="POST">
+                    
+                    <input type="text" name="Nombre" placeholder="Nombre completo" required>
+                    <input type="email" name="Email" placeholder="Correo electrónico" required>
+                    
+                    <select name="Asunto" required>
+                        <option value="">Asunto...</option>
+                        <option value="Informes">Informes de Inscripción</option>
+                        <option value="Vinculación">Vinculación / Estadías</option>
+                        <option value="Soporte">Soporte Técnico</option>
+                    </select>
+                    
+                    <textarea name="Mensaje" placeholder="¿En qué podemos ayudarte?" rows="5" required></textarea>
+                    
+                    <input type="hidden" name="_captcha" value="false"> 
+                    <input type="hidden" name="_next" value="http://127.0.0.1:5500/inicio.html"> 
+                    
+                    <button type="submit" class="btn-yellow">Enviar Mensaje</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-col">
+                <h3>CBT No.1 Almoloya de Juárez</h3>
+                <p>Excelencia educativa en Almoloya de Juárez.</p>
+            </div>
+            <div class="footer-col">
+                <h3>Contacto</h3>
+                <ul>
+                    <li><i class="fas fa-phone"></i> 7291098966</li>
+                    <li><i class="fas fa-envelope"></i> cbtmextepec07@gmail.com</li>
+                </ul>
+            </div>
+        </div>
+        <p class="copyright">&copy; 2026 CBT No. 1 Almoloya de Juárez</p>
+    </footer>
+
+    <script src="script.js"></script>
+    <script>
+        const form = document.getElementById('contactForm');
+        
+        form.addEventListener('submit', function(e) {
+            // Prevenimos el envío instantáneo
+            e.preventDefault();
+            
+            // Mostramos la alerta con diseño moderno
+            Swal.fire({
+                title: "¡Éxito!",
+                text: "Mensaje enviado con éxito. En breve nos pondremos en contacto contigo.",
+                icon: "success",
+                confirmButtonText: "Entendido",
+                confirmButtonColor: "#064e3b", // El verde de tu navbar
+                backdrop: `rgba(6, 78, 59, 0.4)`, // Fondo transparente verde
+                allowOutsideClick: false,
+                customClass: {
+                    title: 'titulo-alerta-cbt',
+                    confirmButton: 'boton-alerta-cbt'
+                }
+            }).then((result) => {
+                // Si el usuario da clic en el botón, el formulario se envía de verdad
+                if (result.isConfirmed) {
+                    form.submit();
+                }
+            });
+        });
+    </script>
+</body>
+</html>

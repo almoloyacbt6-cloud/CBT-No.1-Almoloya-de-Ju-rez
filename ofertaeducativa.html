@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Oferta Educativa Detallada | CBT No. 1</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+<div id="preloader">
+    <div class="loader"></div>
+    <p class="loader-text">Cargando Sistema...</p>
+</div>
+
+    <nav class="navbar">
+        <div class="logo-container">
+            <img src="Logo de la escuela.jpeg" alt="Escudo CBT No. 1" class="nav-logo-img">
+            <div class="logo-text-group">
+                <span class="logo-cbt">CBT No. 1</span>
+                <span class="logo-sub">ALMOLOYA DE JUÁREZ</span>
+            </div>
+        </div>
+       <ul class="nav-links">
+            <li><a href="inicio.html">Inicio</a></li>
+            <li><a href="ofertaeducativa.html">Oferta Educativa</a></li>
+            <li><a href="carreratecnica.html">Carrera Técnica</a></li>
+            <li><a href="admisiones.html">Admisiones</a></li>
+            <li><a href="contactos.html">Contactos</a></li>
+            
+            <li id="login-item">
+                <a href="login.html" class="btn-login-menu">Iniciar Sesión <i class="fas fa-user-circle"></i></a>
+            </li>
+
+            <li id="user-profile" class="user-profile-container" style="display: none;">
+                <div class="profile-image-wrapper">
+                    <img id="display-photo" src="" alt="User">
+                </div>
+                <span id="display-name" class="profile-user-name"></span>
+                <a href="#" onclick="cerrarSesion()" class="logout-btn"><i class="fas fa-sign-out-alt"></i></a>
+            </li>
+        </ul>
+    </nav>
+
+    <header class="header-oferta-image">
+    <img src="https://i.pinimg.com/736x/33/8b/8a/338b8a86e2ea4262e0ee56d5cd3d62da.jpg" alt="Fondo Tecnológico CBT" class="background-image">
+    
+    <div class="overlay-dark"></div>
+
+    <div class="header-content">
+        <h1>Excelencia <span>Académica</span></h1>
+        <p>Conoce el modelo bivalente del CBT No. 1 Almoloya de Juárez.</p>
+    </div>
+</header>
+    <section class="detalle-modelo">
+        <div class="section-intro">
+            <h2 class="section-title">¿Qué ofrece el CBT No. 1 Almoloya de Juárez?</h2>
+            <p>Nuestra oferta educativa se basa en el **Acuerdo Secretarial 276**, brindando una formación integral que combina el conocimiento científico con la práctica tecnológica.</p>
+        </div>
+
+        <div class="modelo-grid">
+            <div class="modelo-item">
+                <div class="modelo-icon"><i class="fas fa-book"></i></div>
+                <h3>Bachillerato General</h3>
+                <p>Cursarás materias como Álgebra, Química, Ética y Literatura, lo que te permite presentar examen en cualquier universidad (UAEMex, UNAM, IPN, etc.).</p>
+            </div>
+            <div class="modelo-item">
+                <div class="modelo-icon"><i class="fas fa-code"></i></div>
+                <h3>Carrera Técnica</h3>
+                <p>A partir del segundo semestre, te especializas en **Informática**, desarrollando competencias en software, hardware y redes.</p>
+            </div>
+            <div class="modelo-item">
+                <div class="modelo-icon"><i class="fas fa-certificate"></i></div>
+                <h3>Titulación Dual</h3>
+                <p>Al concluir los 6 semestres, obtienes tu certificado de preparatoria y el derecho a tramitar tu **Título Profesional**.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="trayecto-educativo">
+        <h2 class="section-title">Tu Trayecto con Nosotros</h2>
+        <div class="timeline">
+            <div class="timeline-step">
+                <div class="step-number">1</div>
+                <div class="step-content">
+                    <h3>Primer Año: Tronco Común</h3>
+                    <p>Adaptación al nivel medio superior y bases de las ciencias exactas y sociales.</p>
+                </div>
+            </div>
+            <div class="timeline-step">
+                <div class="step-number">2</div>
+                <div class="step-content">
+                    <h3>Segundo Año: Especialización</h3>
+                    <p>Inicio de los módulos profesionales. Aquí es donde empiezas a "abrir las llaves del mundo digital".</p>
+                </div>
+            </div>
+            <div class="timeline-step">
+                <div class="step-number">3</div>
+                <div class="step-content">
+                    <h3>Tercer Año: Profesionalización</h3>
+                    <p>Realización de Estadías Profesionales en empresas reales y preparación para el egreso.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="perfil-egreso">
+        <div class="perfil-card">
+            <h2>Al graduarte, serás capaz de:</h2>
+            <div class="perfil-list">
+                <div class="perfil-item"><i class="fas fa-check-circle"></i> Desarrollar aplicaciones web y móviles.</div>
+                <div class="perfil-item"><i class="fas fa-check-circle"></i> Administrar redes y bases de datos.</div>
+                <div class="perfil-item"><i class="fas fa-check-circle"></i> Brindar soporte técnico especializado.</div>
+                <div class="perfil-item"><i class="fas fa-check-circle"></i> Emprender tu propio negocio tecnológico.</div>
+            </div>
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+    <footer>
+        <div class="footer-content">
+            <div class="footer-col">
+                <h3>CBT No.1 Almoloya de Juárez</h3>
+                <p>Excelencia educativa en Almoloya de Juárez.</p>
+            </div>
+            <div class="footer-col">
+                <h3>Contacto</h3>
+                <ul>
+                    <li><i class="fas fa-phone"></i> 7291098966</li>
+                    <li><i class="fas fa-envelope"></i> cbtmextepec07@gmail.com</li>
+                </ul>
+            </div>
+        </div>
+        <p class="copyright">&copy; 2026 CBT No. 1 Almoloya de Juárez</p>
+    </footer>
+</body>
+</html>
